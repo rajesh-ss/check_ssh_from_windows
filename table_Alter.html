@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg</title>
+    <link rel="stylesheet" href="./frm.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"> </script>
+    <script src="./ann.js"></script>
+</head>
+<body ng-app="myapp">
+    <div class="cont">
+        <div class="innerCnt"  ng-controller="myctrl">
+            <h1>Login</h1>
+            <form method="post">
+                <label for="id">ID:</label><br>
+                <input type="text" id="id" name="id" ng-model="id"><br>
+                <label for="brand">brand:</label><br>
+                <input type="text" id="brand" name="brand" ><br>
+                <label for="model">model:</label><br>
+                <input type="text" id="model" name="model" ><br>
+                <label for="year">year:</label><br>
+                <input type="text" id="year" name="year" ><br><br>
+                <label for="b_pr">bought price:</label><br>
+                <input type="password" id="b_pr" name="b_pr" ><br><br>
+                <label for="s_pr">selling price:</label><br>
+                <input type="password" id="s_pr" name="s_pr" ><br><br>
+                <input type="submit" value="Submit">
+              </form>
+
+              <div>{{names}}</div>
+        </div>
+    </div>
+</body>
+</html>

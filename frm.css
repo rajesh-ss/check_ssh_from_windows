@@ -1,0 +1,15 @@
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 20px 0;
+    border: 3px solid black;
+}
